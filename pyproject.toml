@@ -1,0 +1,25 @@
+[project]
+name = "photo-video-sharing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "fastapi>=0.141.1",
+    "fastapi-users[sqlalchemy]>=15.0.5",
+    "imagekitio>=5.8.0",
+    "python-dotenv>=1.2.2",
+    "uvicorn[standard]>=0.52.2",
+]
+
+[tool.ruff]
+line-length = 150
+
+[tool.ruff.lint]
+select = ['E', 'F', 'I']
+
+[tool.ruff.format]
+quote-style = 'single'
+indent-style = 'tab'
+indent-size = 2
