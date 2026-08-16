@@ -43,4 +43,4 @@ async def get_async_session() -> AsyncGenerator[AsyncSession, None]:
     yield session
 
 async def get_user_db(session: AsyncSession = Depends(get_async_session)):
-  yield SQLAlchemyBaseUserTableUUID(session, User)
+  yield SQLAlchemyUserDatabase(session, User)
